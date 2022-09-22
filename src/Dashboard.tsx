@@ -1,4 +1,5 @@
-import { Message, User } from './utils/types';
+import { User } from './utils/types';
+import Button from './components/Button';
 
 let john: User = {
   id: 1,
@@ -23,9 +24,9 @@ export default function Dashboard() {
     <div className="flex flex-col h-screen text-slate-900/80">
       <header className="flex justify-between items-center px-6 py-2 border-b border-slate-900/10 bg-white">
         <h1 className="hidden md:block font-semibold text-xl">App</h1>
-        <button className="h-6 block md:hidden">
+        <Button className="h-6 block md:hidden">
           <span className="material-symbols-rounded">menu</span>
-        </button>
+        </Button>
         <div className="flex items-center gap-4">
           <div className="relative flex flex-col pr-5 text-slate-700 text-sm text-right after:content-[''] after:absolute after:border-x-4 after:border-x-transparent after:border-t-4 after:border-t-slate-700 after:right-0 after:top-[calc(50%-2px)] hover:after:rotate-180">
             <div className="font-semibold">{nicole.displayName}</div>
@@ -40,7 +41,7 @@ export default function Dashboard() {
               <h2 className="flex-grow font-semibold">Recent Messages</h2>
               <button className="h-6 outline-none focus:ring-none disabled:text-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed material-symbols-rounded scale-75">edit_square</button>
             </div>
-            <div className="px-6 py-4">djd</div>
+            <div className="px-6 py-4"> </div>
           </div>
         </div>
         <div className="flex-grow flex flex-col h-full">
@@ -54,9 +55,10 @@ export default function Dashboard() {
               className="flex-grow text-xs rounded-md border-none placeholder-slate-400 bg-slate-100 focus:bg-white focus:outline-none focus:ring-slate-300"
               placeholder="Type a new message"
             ></input>
-            <button className="px-2 py-1 bg-transparent outline-none rounded-md =font-medium active:scale-95 bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-none disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed material-symbols-rounded">
+
+            <Button type="primary" className="material-symbols-rounded">
               send
-            </button>
+            </Button>
           </div>
         </div>
       </main>
