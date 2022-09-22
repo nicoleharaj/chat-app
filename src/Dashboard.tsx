@@ -23,7 +23,7 @@ john.contacts.push(nicole);
 export default function Dashboard() {
   return (
     <div className="flex flex-col h-screen text-slate-700">
-      <header className="flex justify-between items-center px-6 py-2 border-b border-slate-900/10 bg-slate-50">
+      <header className=" flex justify-between items-center px-6 py-2 border-b border-slate-900/10 bg-slate-50">
         <h1 className="hidden lg:block font-semibold text-xl">App</h1>
         <Button className="h-6 block lg:hidden">
           <span className="material-symbols-rounded">menu</span>
@@ -70,7 +70,7 @@ export default function Dashboard() {
           <div className="flex gap-4 bg-slate-50 px-6 py-4">
             <input
               type="text"
-              className="flex-grow text-xs rounded-md border-none placeholder-slate-500 bg-slate-200/80 focus:bg-white focus:outline-none focus:ring-slate-300"
+              className="flex-grow text-xs rounded-md border-none placeholder-slate-500 bg-slate-200/80 focus:bg-white focus:outline-none focus:ring-slate-300 focus:ring-offset-0"
               placeholder="Type a new message"
             ></input>
             <Button className="rounded-full px-0 material-symbols-rounded">emoji_emotions</Button>
