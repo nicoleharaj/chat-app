@@ -8,7 +8,7 @@ export default function SignUp() {
     <div className="flex w-screen h-screen justify-center items-center bg-slate-50">
       <div className="flex flex-col w-80 gap-3 text-slate-700">
         <h1 className="text-2xl font-bold text-slate-800">Create an account</h1>
-        <form action="" className="grid grid-cols-2 gap-4">
+        <form action="/signup"  className="grid grid-cols-2 gap-4">
           <Label>
             Name
             <Input type="text" name="name" required />

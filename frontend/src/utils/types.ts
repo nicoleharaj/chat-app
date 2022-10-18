@@ -1,5 +1,4 @@
 import { ReactElement } from "react";
-import { SignatureHelpTriggerReason } from "typescript";
 
 // export interface Message {
 //   id: number;
@@ -9,7 +8,6 @@ import { SignatureHelpTriggerReason } from "typescript";
 // }
 
 export interface UserProps {
-  id: number;
   email: string;
   password: string;
   displayName: string;
@@ -41,7 +39,7 @@ export interface ButtonProps {
 
 export interface InputProps {
   id?: string;
-  type: 'text' | 'email' | 'password' | 'checkbox' | 'color' | 'date' ;
+  type: 'text' | 'email' | 'password' | 'checkbox' | 'color' | 'date';
   placeholder?: string;
   name?: string;
   required?: boolean;

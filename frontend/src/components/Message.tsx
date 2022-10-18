@@ -1,4 +1,3 @@
-import { ReactElement } from 'react';
 import classNames from 'classnames';
 import { MessageProps } from '../utils/types';
 

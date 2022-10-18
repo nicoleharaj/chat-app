@@ -6,7 +6,7 @@ export default function LogIn() {
   return (
     <div className="flex w-screen h-screen justify-center items-center bg-slate-50">
       <div className="flex flex-col w-64 gap-3 text-slate-700">
-        <form action="" className="flex flex-col gap-4">
+        <form action="/login" method="POST" className="flex flex-col gap-4">
           <h1 className="text-2xl font-bold text-slate-800">Sign in</h1>
           <Input type="email" placeholder="Email" />
           <Input type="password" placeholder="Password" />
@@ -15,7 +15,7 @@ export default function LogIn() {
           </Button>
           <div className="text-xs">
             Don't have an account?
-            <Link to="/sign-up" className="ml-1 underline">
+            <Link to="/signup" className="ml-1 underline">
               Sign up
             </Link>
           </div>

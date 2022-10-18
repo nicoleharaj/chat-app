@@ -5,7 +5,6 @@ import Message from '../components/Message';
 import RecentMessage from '../components/RecentMessage'
 
 let john: UserProps = {
-  id: 1,
   email: 'johnsmith@protonmail.com',
   password: '',
   displayName: 'John Smith',
@@ -13,7 +12,6 @@ let john: UserProps = {
 };
 
 let nicole: UserProps = {
-  id: 1,
   email: 'nicoleharaj@outlook.com',
   password: '',
   displayName: 'Nicole Haraj',

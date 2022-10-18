@@ -8,10 +8,22 @@ function App() {
     <>
       Connected!
 
+      <ul>
+        <li>
+          <Link to="/dashboard">Home</Link>
+        </li>
+        <li>
+          <Link to="/login">Log in</Link>
+        </li>
+        <li>
+          <Link to="/signup">Sign up</Link>
+        </li>
+      </ul>
+
       <Routes>
-        <Route path="/home" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<LogIn />} />
-        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </>
   );

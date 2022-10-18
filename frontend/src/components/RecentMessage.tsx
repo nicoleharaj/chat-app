@@ -1,6 +1,3 @@
-import classNames from 'classnames';
-import { MessageProps } from '../utils/types';
-
 export default function RecentMessage() {
   return (
     <div className="px-6 py-4 hover:bg-slate-100 transition-colors cursor-pointer">
